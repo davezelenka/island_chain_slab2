@@ -106,7 +106,7 @@ slab2_cross_section_extractor.py creates chart of cross-section.
 
 python slab2_cross_section_extractor.py --input_dep sco/sco_slab2_dep_02.23.18.grd --input_thk sco/sco_slab2_thk_02.23.18.grd --earthquakes sco/central_islands.csv --orientation w_e  --center_lat -58 --center_lon 333.7 --output_plot charts/cross_sections/central_islands.png --title "Central Islands" --buffer_degrees 1 --dpi 600
 
-python slab2_cross_section_extractor.py --input_dep izu/izu_slab2_dep_02.24.18.grd --input_thk izu/izu_slab2_thk_02.24.18.grd --earthquakes izu/mariannas.csv --orientation w_e  --center_lat 17.2 --center_lon 146 --output_plot charts/cross_sections/mariana_islands.png --title "Mariana Islands" --buffer_degrees 1 --dpi 600 
+python slab2_cross_section_extractor.py --input_dep izu/izu_slab2_dep_02.24.18.grd --input_thk izu/izu_slab2_thk_02.24.18.grd --earthquakes izu/mariana_islands.csv --orientation w_e  --center_lat 17.2 --center_lon 146 --output_plot charts/cross_sections/mariana_islands.png --title "Mariana Islands" --buffer_degrees 1 --dpi 600 
 
 python slab2_cross_section_extractor.py --input_dep car/car_slab2_dep_02.24.18.grd --input_thk car/car_slab2_thk_02.24.18.grd --earthquakes car/puerto_rico.csv --orientation n_s  --center_lat 18.5 --center_lon 293.6 --output_plot charts/cross_sections/puerto_rico.png --title "Puerto Rico" --buffer_degrees 1 --dpi 600 
 
@@ -157,5 +157,6 @@ python distance_from_center_scatter_plot.py --title "Philippines" --location "Ph
 python distance_from_center_scatter_plot.py --title "Puerto Rico" --location "Puerto Rico" --csv "earthquake_data_full.csv" --output "charts/distance_from_center_scatter/Puerto_Rico_scatter.png" --dpi 600
 
 python distance_from_center_scatter_plot.py --title "Tonga" --location "Tonga" --csv "earthquake_data_full.csv" --output "charts/distance_from_center_scatter/Tonga_scatter.png" --dpi 600
+
 
 
