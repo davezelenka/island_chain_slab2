@@ -9,6 +9,7 @@ USGS data conformed to the following structure:
 ['date_time', 'lon360', 'latitude', 'depth_km', 'magnitude']
 
 ================================
+
 slab2_cross_section_extractor.py was used to determine distances from interface and slab center.
 
 python slab2_cross_section_extractor.py --grd sco/sco_slab2_dep_02.23.18.grd --thk sco/sco_slab2_thk_02.23.18.grd --eq sco/central_islands.csv --csv sco/distances_surface.csv
@@ -23,6 +24,7 @@ python slab2_cross_section_extractor.py --grd phi/phi_slab2_dep_02.26.18.grd --t
 python slab2_cross_section_extractor.py --grd ryu/ryu_slab2_dep_02.26.18.grd --thk ryu/ryu_slab2_thk_02.26.18.grd --eq ryu/okinawa.csv --csv ryu/distances_surface.csv 
 
 ================================
+
 eq_plot_v2.py was used to create histograms comparing interface with center for each location at defined depth intervals. Terminal output includes statistical summaries.
 
 python eq_plot_v2.py --x-axis "Earthquake distances (km)" --csv sco/distances_surface.csv --title "Central Islands (shallow)" --output charts/histograms/sco_histogram_25_70.png --max -25 --min -70 --dpi 600
@@ -59,6 +61,7 @@ python eq_plot_v2.py --x-axis "Earthquake distances (km)" --csv phi/distances_su
 python eq_plot_v2.py --x-axis "Earthquake distances (km)" --csv ryu/distances_surface.csv --title "Okinawa (deep)" --output charts/histograms/ryu_histogram_300_1000.png --max -300 --min -1000 --dpi 600
 
 ================================
+
 slab2_cross_section_extractor.py creates chart of cross-section.
 
 
@@ -74,14 +77,16 @@ python slab2_cross_section_extractor.py --input_dep phi/phi_slab2_dep_02.26.18.g
 python slab2_cross_section_extractor.py --input_dep ryu/ryu_slab2_dep_02.26.18.grd --input_thk ryu/ryu_slab2_thk_02.26.18.grd --earthquakes ryu/okinawa.csv --orientation w_e  --center_lat 26.3 --center_lon 128 --output_plot charts/cross_sections/okinawa.png --title "Okinawa" --buffer_degrees 1 --dpi 600 
 
 
-Bonus:
+Bonus Cascadia cross-section out to Mount Rainier:
 python slab2_cross_section_extractor.py --input_dep cas/cas_slab2_dep_02.24.18.grd --input_thk cas/cas_slab2_thk_02.24.18.grd --earthquakes cas/cascadia.csv --orientation w_e  --center_lat 46.8 --center_lon 237 --output_plot cas/cascadia.png --title "Cascadia" --buffer_degrees 1 --dpi 600 
 
 ================================
+
 Boxplot visualization requires earthquake_data_full.csv.
 python earthquake_bloxplot_visualization.py
 
 ================================
+
 Distance from center scatterplot.
 
 python distance_from_center_scatter_plot.py --title "Adak" --location "Adak" --csv "earthquake_data_full.csv" --output "charts/distance_from_center_scatter/Adak_scatter.png" --dpi 600
