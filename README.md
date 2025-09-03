@@ -13,18 +13,18 @@ USGS data conformed to the following structure:
 
 ================================
 
-slab2_cross_section_extractor.py was used to determine distances from interface and slab center.
+eq_distances_v2.py was used to determine distances from interface and slab center.
 
-python slab2_cross_section_extractor.py --grd sco/sco_slab2_dep_02.23.18.grd --thk sco/sco_slab2_thk_02.23.18.grd --eq sco/central_islands.csv --csv sco/distances_surface.csv
-python slab2_cross_section_extractor.py --grd izu/izu_slab2_dep_02.24.18.grd --thk izu/izu_slab2_thk_02.24.18.grd --eq izu/mariannas.csv --csv izu/distances_surface.csv 
-python slab2_cross_section_extractor.py --grd car/car_slab2_dep_02.24.18.grd --thk car/car_slab2_thk_02.24.18.grd --eq car/puerto_rico.csv --csv car/distances_surface.csv 
-python slab2_cross_section_extractor.py --grd kur/kur_slab2_dep_02.24.18.grd --thk kur/kur_slab2_thk_02.24.18.grd --eq kur/kuril.csv --csv kur/distances_surface.csv 
-python slab2_cross_section_extractor.py --grd van/van_slab2_dep_02.23.18.grd --thk van/van_slab2_thk_02.23.18.grd --eq van/navolou.csv --csv van/distances_surface.csv 
-python slab2_cross_section_extractor.py --grd sum/sum_slab2_dep_02.23.18.grd --thk sum/sum_slab2_thk_02.23.18.grd --eq sum/java.csv --csv sum/distances_surface.csv 
-python slab2_cross_section_extractor.py --grd alu/alu_slab2_dep_02.23.18.grd --thk alu/alu_slab2_thk_02.23.18.grd --eq alu/adak.csv --csv alu/distances_surface.csv 
-python slab2_cross_section_extractor.py --grd ker/ker_slab2_dep_02.24.18.grd --thk ker/ker_slab2_thk_02.24.18.grd --eq ker/tonga.csv --csv ker/distances_surface.csv 
-python slab2_cross_section_extractor.py --grd phi/phi_slab2_dep_02.26.18.grd --thk phi/phi_slab2_thk_02.26.18.grd --eq phi/philippines.csv --csv phi/distances_surface.csv 
-python slab2_cross_section_extractor.py --grd ryu/ryu_slab2_dep_02.26.18.grd --thk ryu/ryu_slab2_thk_02.26.18.grd --eq ryu/okinawa.csv --csv ryu/distances_surface.csv 
+python eq_distances_v2.py --grd sco/sco_slab2_dep_02.23.18.grd --thk sco/sco_slab2_thk_02.23.18.grd --eq sco/central_islands.csv --out sco/distances_surface.csv
+python eq_distances_v2.py --grd izu/izu_slab2_dep_02.24.18.grd --thk izu/izu_slab2_thk_02.24.18.grd --eq izu/mariannas.csv --out izu/distances_surface.csv 
+python eq_distances_v2.py --grd car/car_slab2_dep_02.24.18.grd --thk car/car_slab2_thk_02.24.18.grd --eq car/puerto_rico.out --csv car/distances_surface.csv 
+python eq_distances_v2.py --grd kur/kur_slab2_dep_02.24.18.grd --thk kur/kur_slab2_thk_02.24.18.grd --eq kur/kuril.csv --out kur/distances_surface.csv 
+python eq_distances_v2.py --grd van/van_slab2_dep_02.23.18.grd --thk van/van_slab2_thk_02.23.18.grd --eq van/navolou.csv --out van/distances_surface.csv 
+python eq_distances_v2.py --grd sum/sum_slab2_dep_02.23.18.grd --thk sum/sum_slab2_thk_02.23.18.grd --eq sum/java.csv --out sum/distances_surface.csv 
+python eq_distances_v2.py --grd alu/alu_slab2_dep_02.23.18.grd --thk alu/alu_slab2_thk_02.23.18.grd --eq alu/adak.csv --out alu/distances_surface.csv 
+python eq_distances_v2.py --grd ker/ker_slab2_dep_02.24.18.grd --thk ker/ker_slab2_thk_02.24.18.grd --eq ker/tonga.csv --out ker/distances_surface.csv 
+python eq_distances_v2.py --grd phi/phi_slab2_dep_02.26.18.grd --thk phi/phi_slab2_thk_02.26.18.grd --eq phi/philippines.csv --out phi/distances_surface.csv 
+python eq_distances_v2.py --grd ryu/ryu_slab2_dep_02.26.18.grd --thk ryu/ryu_slab2_thk_02.26.18.grd --eq ryu/okinawa.csv --out ryu/distances_surface.csv 
 
 ================================
 
