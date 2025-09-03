@@ -1,8 +1,11 @@
 Research on boundary-layers at slab interfaces at island chain subduction zones.
 
 Island Arc Slab2.0 Global distribution of Slab2 models colored by depth to the slab surface: https://earthquake.usgs.gov/slab2/
+
 Inspected with https://interactive-earth.com/earthquakes
+
 Earthquake catalogue: https://earthquake.usgs.gov/earthquakes/search/
+
 Slab2.0 Models found here: https://www.sciencebase.gov/catalog/item/5aa1b00ee4b0b1c392e86467/
 
 USGS data conformed to the following structure:
