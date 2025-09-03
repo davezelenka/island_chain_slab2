@@ -94,6 +94,7 @@ python eq_plot_v2.py --x-axis "Earthquake distances (km)" --csv sum/distances_su
 python eq_plot_v2.py --x-axis "Earthquake distances (km)" --csv alu/distances_surface.csv --title "Adak (deep)" --output charts/histograms/alu_histogram_300_1000.png --max -300 --min -1000 --dpi 600
 
 python eq_plot_v2.py --x-axis "Earthquake distances (km)" --csv ker/distances_surface.csv --title "Tonga (deep)" --output charts/histograms/ker_histogram_300_1000.png --max -300 --min -1000 --dpi 600
+
 python eq_plot_v2.py --x-axis "Earthquake distances (km)" --csv phi/distances_surface.csv --title "Philippines (deep)" --output charts/histograms/phi_histogram_300_1000.png --max -300 --min -1000 --dpi 600
 
 python eq_plot_v2.py --x-axis "Earthquake distances (km)" --csv ryu/distances_surface.csv --title "Okinawa (deep)" --output charts/histograms/ryu_histogram_300_1000.png --max -300 --min -1000 --dpi 600
@@ -125,6 +126,7 @@ python slab2_cross_section_extractor.py --input_dep ryu/ryu_slab2_dep_02.26.18.g
 
 
 Bonus Cascadia cross-section out to Mount Rainier:
+
 python slab2_cross_section_extractor.py --input_dep cas/cas_slab2_dep_02.24.18.grd --input_thk cas/cas_slab2_thk_02.24.18.grd --earthquakes cas/cascadia.csv --orientation w_e  --center_lat 46.8 --center_lon 237 --output_plot cas/cascadia.png --title "Cascadia" --buffer_degrees 1 --dpi 600 
 
 ================================
@@ -155,4 +157,5 @@ python distance_from_center_scatter_plot.py --title "Philippines" --location "Ph
 python distance_from_center_scatter_plot.py --title "Puerto Rico" --location "Puerto Rico" --csv "earthquake_data_full.csv" --output "charts/distance_from_center_scatter/Puerto_Rico_scatter.png" --dpi 600
 
 python distance_from_center_scatter_plot.py --title "Tonga" --location "Tonga" --csv "earthquake_data_full.csv" --output "charts/distance_from_center_scatter/Tonga_scatter.png" --dpi 600
+
 
