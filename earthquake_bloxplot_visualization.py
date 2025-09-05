@@ -138,17 +138,17 @@ for i, location in enumerate(locations):
 # Create box plots with outliers hidden (showfliers=False)
 box1 = ax.boxplot(box_data_surface, positions=box_positions_surface, 
                   widths=0.3, patch_artist=True, showfliers=False,  # This hides outliers
-                  boxprops=dict(facecolor='lightblue', color='blue'),
-                  medianprops=dict(color='darkblue', linewidth=2),
-                  whiskerprops=dict(color='blue'),
-                  capprops=dict(color='blue'))
+                  boxprops=dict(facecolor='white', hatch='///', color='black'),
+                  medianprops=dict(color='black', linewidth=2),
+                  whiskerprops=dict(color='black'),
+                  capprops=dict(color='black'))
 
 box2 = ax.boxplot(box_data_center, positions=box_positions_center, 
                   widths=0.3, patch_artist=True, showfliers=False,  # This hides outliers
-                  boxprops=dict(facecolor='lightcoral', color='red'),
-                  medianprops=dict(color='darkred', linewidth=2),
-                  whiskerprops=dict(color='red'),
-                  capprops=dict(color='red'))
+                  boxprops=dict(facecolor='black', hatch='\\\\\\', color='white'),
+                  medianprops=dict(color='black', linewidth=2),
+                  whiskerprops=dict(color='black'),
+                  capprops=dict(color='black'))
 
 # Add horizontal line at distance = 0
 ax.axhline(y=0, color='black', linestyle='-', linewidth=1, alpha=0.7)
@@ -171,8 +171,8 @@ ax.grid(True, alpha=0.3, axis='y')
 
 # Create legend
 from matplotlib.patches import Patch
-legend_elements = [Patch(facecolor='lightblue', edgecolor='blue', label='Distance to Surface'),
-                  Patch(facecolor='lightcoral', edgecolor='red', label='Distance to Center')]
+legend_elements = [Patch(facecolor='white', edgecolor='black', hatch='///', label='Distance to Surface'),
+                  Patch(facecolor='black', edgecolor='white', hatch='\\\\\\', label='Distance to Center')]
 ax.legend(handles=legend_elements, loc='upper right', fontsize=12)
 
 # Adjust layout to prevent label cutoff
@@ -185,7 +185,7 @@ total_outliers_center = sum(outlier_counts['center'].values())
 stats_text = f"Earthquakes: {filtered_count}\nOutliers removed (Surface): {total_outliers_surface}\nOutliers removed (Center): {total_outliers_center}\nMethod: {OUTLIER_METHOD.upper()}"
 
 ax.text(0.02, 0.98, stats_text, transform=ax.transAxes, fontsize=12,
-        verticalalignment='top', bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.8))
+        verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
 
 # Show the plot
 #plt.show()

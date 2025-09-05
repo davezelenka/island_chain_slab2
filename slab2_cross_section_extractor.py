@@ -345,7 +345,7 @@ def create_plot(df, output_plot, earthquakes_df=None, dpi=300, title=None, crop_
         
         # Plot bottom slab (line only, no points)
         ax.plot(df_plot['x_coord'], df_plot['bottom_depth_km'], 
-                color='black', linewidth=1.5, label='Bottom of slab')
+                color='black', linestyle='dashed', linewidth=1.5, label='Bottom of slab')
     
     # Plot earthquakes if provided
     if earthquakes_df is not None and not earthquakes_df.empty:
@@ -357,11 +357,11 @@ def create_plot(df, output_plot, earthquakes_df=None, dpi=300, title=None, crop_
             earthquakes_sorted['x_coord'], 
             earthquakes_sorted['depth_km'], 
             c=earthquakes_sorted['magnitude'], 
-            cmap='viridis', 
-            s=earthquakes_sorted['magnitude']*20,  # Size proportional to magnitude
-            alpha=0.7,
+            cmap='Greys', 
+            s=earthquakes_sorted['magnitude']*10,  # Size proportional to magnitude
+            alpha=0.8,
             edgecolors='black',
-            linewidth=0.5,
+            linewidth=0.7,
             label='Earthquakes'
         )
         

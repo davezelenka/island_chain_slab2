@@ -118,7 +118,7 @@ python slab2_cross_section_extractor.py --input_dep sum/sum_slab2_dep_02.23.18.g
 
 python slab2_cross_section_extractor.py --input_dep alu/alu_slab2_dep_02.23.18.grd --input_thk alu/alu_slab2_thk_02.23.18.grd --earthquakes alu/adak.csv --orientation n_s  --center_lat 51.98 --center_lon 184.1 --output_plot charts/cross_sections/adak.png --title "Adak" --buffer_degrees 1 --dpi 600 
 
-python slab2_cross_section_extractor.py --input_dep ker/ker_slab2_dep_02.24.18.grd --input_thk ker/ker_slab2_thk_02.24.18.grd --earthquakes ker/tonga.csv --orientation w_e  --center_lat -21.9 --center_lon 185.2 --output_plot charts/cross_sections/tonga.png --title "Tonga" --buffer_degrees 1 --dpi 600 
+python slab2_cross_section_extractor.py --input_dep ker/ker_slab2_dep_02.24.18.grd --input_thk ker/ker_slab2_thk_02.24.18.grd --earthquakes ker/tonga.csv --orientation w_e  --center_lat -20 --center_lon 184 --output_plot charts/cross_sections/tonga.png --title "Tonga" --buffer_degrees 1 --dpi 600 
 
 python slab2_cross_section_extractor.py --input_dep phi/phi_slab2_dep_02.26.18.grd --input_thk phi/phi_slab2_thk_02.26.18.grd --earthquakes phi/philippines.csv --orientation w_e  --center_lat 9.2 --center_lon 125.1 --output_plot charts/cross_sections/philippines.png --title "Philippines" --buffer_degrees 1 --dpi 600 
 
@@ -157,6 +157,5 @@ python distance_from_center_scatter_plot.py --title "Philippines" --location "Ph
 python distance_from_center_scatter_plot.py --title "Puerto Rico" --location "Puerto Rico" --csv "earthquake_data_full.csv" --output "charts/distance_from_center_scatter/Puerto_Rico_scatter.png" --dpi 600
 
 python distance_from_center_scatter_plot.py --title "Tonga" --location "Tonga" --csv "earthquake_data_full.csv" --output "charts/distance_from_center_scatter/Tonga_scatter.png" --dpi 600
-
 
 
